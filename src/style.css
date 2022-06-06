@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: rgb(243, 243, 243);
+}
+
+.form-container {
+  margin: 2em;
+  padding: 5em 2em;
+  width: 800px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+}
+
+.register-form {
+  padding: 3em 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+label {
+  width: 100px;
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  height: 30px;
+  font-size: 1.1em;
+}
+
+input:focus:invalid {
+  border: 1px solid red;
+}
+
+input:focus:invalid + .error-message {
+  color: red;
+}
+
+.checkbox-label {
+  text-align: left;
+  width: 400px;
+}
+
+input[type="checkbox"] {
+  width: 100px;
+}
+
+input[type="submit"] {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.error-message {
+  color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
